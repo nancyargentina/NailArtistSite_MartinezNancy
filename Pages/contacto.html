@@ -7,61 +7,64 @@
     <title>Zoe. Uñas con estilo-Contacto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Allison&family=Yellowtail&family=Roboto:wght@200;300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
     <Header class="headerYFooter">
-        <p>Logo</p>
+        <div class="">
+            <a class="menu__item__link" href="../index.html"><img class="logo" src="../images/logo.jpg" alt="Logo"></a>
+        </div>
         <nav>
-        <ul class="menu">
-            <li class="menu__item"><a class="menu__item__link" href="../index.html">Inicio</a> |</li>
-            <li class="menu__item"><a class="menu__item__link" href="estilosNail.html">Estilos</a> |</li>
-            <li class="menu__item"><a class="menu__item__link" href="galeria.html">Galería</a> |</li>
-            <li class="menu__item"><a class="menu__item__link" href="unPocoDeMi.html">Un poco de mí</a> |</li>
-            <li class="menu__item"><a class="menu__item__link" href="contacto.html">Contacto</a> </li>
-        </ul>
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__item__link" href="../index.html">Inicio</a> |</li>
+                <li class="menu__item"><a class="menu__item__link" href="estilosNail.html">Estilos</a> |</li>
+                <li class="menu__item"><a class="menu__item__link" href="galeria.html">Galería</a> |</li>
+                <li class="menu__item"><a class="menu__item__link" href="unPocoDeMi.html">Un poco de mí</a> |</li>
+                <li class="menu__item"><a class="menu__item__link" href="contacto.html">Contacto</a> </li>
+            </ul>
         </nav>              
     </Header>
+
     <main>
         <div class="encabezado">
             <h2 class="encabezado__titulo">Contacto</h2>
-        </div>
-        
-        <div class="centro"><fieldset class="moduloContacto">
-        <form action="" method="post">
-            <p>
-                <label for="unNombre">Nombre y Apellido</label>
-                <input type="text" name="nombre" id="unNombre" placeholder="Nombre y Apellido"></p>
-            <p>
-                <label for="email">Correo electrónico</label>
-                <input type="email"name="correo" id="email" placeholder="nombre@correo.com.ar"></p>
-            <p>
-                <label for="tel">Teléfono</label>
-                <input type="tel"name="tel" id="tel" placeholder="(011)15 98765432"></p>
-            <p>
-                <label for="wsp">Sólo WhatsApp</label>
-                <input type="checkbox" name="wsp" id="wsp" value="1"></p>
-            <p>
-                <label for="serv">¿Qué querés hacerte?</label>
-                <select name="servicio" id="serv">
-                <option value="semi">Esmaltado semipermanente</option>
-                <option value="esculpido">Uñas esculpidas</option>
-                <option value="presson">Uñas postizas</option>
-            </select></p>
-            <p>Detalla qué querés realizarte. ¿Querés nailart, color liso, brillos?¿Hay algún estilo o diseño en particular que te guste?</p>
-            <p><textarea name="comentario" id="comentarios" cols="50" rows="15"></textarea></p>
-            <p><input class="boton" type="reset" value="Limpiar datos"></p>
-            <p><input class="boton" type="submit" value="Enviar"></p>
-        </form>
-        </div>
-
-
-    </fieldset>
-</main>
-<footer class="headerYFooter pie">
-    <a href="https://www.instagram.com/nancy.carolina.martinez/"><img class="footer__icons" src="../images/instagram25px.png" alt="Instagram"></a>
-    <p>Nancy Martinez</p>
-</footer>
+        </div>        
+        <section>
+            <fieldset class="moduloContacto">
+                <form action="" method="post">
+                    <p>
+                        <label for="unNombre">Nombre y Apellido</label>
+                        <input type="text" name="nombre" id="unNombre" placeholder="Nombre y Apellido"></p>
+                    <p>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email"name="correo" id="email" placeholder="nombre@correo.com.ar"></p>
+                    <p>
+                        <label for="tel">Teléfono</label>
+                        <input type="tel"name="tel" id="tel" placeholder="(011)15 98765432"></p>
+                    <p>
+                        <label for="wsp">Sólo WhatsApp</label>
+                        <input type="checkbox" name="wsp" id="wsp" value="1"></p>
+                    <p>
+                        <label for="serv">¿Qué querés hacerte?</label>
+                        <select name="servicio" id="serv">
+                            <option value="semi">Esmaltado semipermanente</option>
+                            <option value="esculpido">Uñas esculpidas</option>
+                            <option value="presson">Uñas postizas</option>
+                        </select></p>
+                    <p>Detalla qué querés realizarte. ¿Querés nailart, color liso, brillos?¿Hay algún estilo o diseño en particular que te guste?</p>
+                    <p><textarea name="comentario" id="comentarios" cols="50" rows="15"></textarea></p>
+                    <p><input class="boton" type="reset" value="Limpiar datos"></p>
+                    <p><input class="boton" type="submit" value="Enviar"></p>
+                </form>
+            </fieldset>
+        </section>
+    </main>
+    <footer class="headerYFooter pie">
+        <a href="https://www.instagram.com/nancy.carolina.martinez/"><img class="footer__icons" src="../images/instagram25px.png" alt="Instagram"></a>
+        <p>Nancy Martinez</p>
+        <div>Logotipo hecho con <a href="https://www.designevo.com/es/" title="Creador de logotipos gratis online">
+            DesignEvo</a></div>
+    </footer>
 </body>
 </html>
