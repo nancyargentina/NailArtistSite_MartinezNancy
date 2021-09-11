@@ -1,0 +1,12 @@
+body {background-color:rgb(31, 31, 31);
+}
+header {background-color:#F23535;}
+footer{background-color: #F23535;}
+h2{
+    color:#7157ce;
+}
+section {color:beige;}
+table {background-color:#F23535;
+        color:beige;}
+.fondoimg {background-color:orange;}
+p {color:beige;}
