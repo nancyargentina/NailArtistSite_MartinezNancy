@@ -3,6 +3,10 @@
 }*/
 body {
   background-color: rgb(31, 31, 31);
+  margin-right: 0;
+}
+main{
+  min-height: 800px;
 }
 header {
   background-color: rgb(12, 12, 12);
@@ -10,42 +14,83 @@ header {
 footer {
   background-color: rgb(12, 12, 12);
 }
-.footer__icons{width: 25px;
-
+.footer__icons{
+  width: 25px;
 }
 h2 {
   color: #7157ce;
   font-family: 'Roboto', sans-serif;
+  font-size: 9vh;
   text-align: center;
-  
-}
-.encabezado{ 
-     background-image:url("../images/wall.jpg");
-     background-size: cover;
-     text-shadow:2px 2px 2px white;
-     font-size: 6vh;
-    }
-section {
-  color: beige;
-  background-color: black;
-}
-
-.fondoimg {
-  background-color: orange;
+  text-shadow:2px 2px 4px beige; 
 }
 p {
   color: beige;
   font-family: 'Roboto', sans-serif;
   font-weight:300;
 }
+.encabezado{ 
+  background-image:url("../images/wall.jpg");
+  background-size: cover;
+  height: 15vh;
+  margin-bottom:1%;
+
+  }
+  .encabezado__titulo{
+    position:relative;
+    top:2.5vh;
+  }
+section {
+  color: beige;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+}
+.seccion__imagen{
+
+  display:inline-block;
+  background-size: contain;
+}
+.seccion__imagen--medidas{
+  width: 300px;
+  }
+
+.articulo{
+  display: inline-block;
+  width:40 rem;
+  height: 40 rem;
+
+}
+.articulo__titulo{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  margin:1rem 1rem 1rem 1rem;
+}
+
+.articulo__parrafo--derecha{
+  text-align: right;
+}
+.articulo__parrafo--izquierda{
+  text-align: left;
+}
 .menu{
     list-style-type:none;
 }
-.menu--item{
-    text-decoration: none;
-    color:beige;
-    font-family: 'Bebas Neue', cursive;
-    background-color: transparent;
+.menu__item{
+    display: inline-block;
+    /* width: 20%; */
+}
+.menu__item__link{
+  text-decoration: none;
+  color:beige;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.moduloContacto{
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    left: 2rem;
 }
 .pie{
     font-family: 'Roboto', sans-serif;
@@ -55,7 +100,12 @@ p {
     font-family: 'Roboto', sans-serif;
     border-color: #7157ce;
     border-width: medium;
+    background-color:#7157ce;
 
   
 }
-
+.seccionGaleria{
+  display: inline-block;
+  width: 30%;
+  min-width:300px ;
+}
