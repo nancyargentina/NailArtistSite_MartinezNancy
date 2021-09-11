@@ -5,23 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoe. Uñas con estilo-Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/estilos.css">
 </head>
 <body>
     <Header>
         <p>Logo</p>
         <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="estilosNail.html">Estilos</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-            <li><a href="unPocoDeMi.html">Un poco de mí</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+        <ul class="menu">
+            <li><a class="menu--item" href="../index.html">Inicio</a></li>
+            <li><a class="menu--item" href="estilosNail.html">Estilos</a></li>
+            <li><a class="menu--item" href="galeria.html">Galería</a></li>
+            <li><a class="menu--item" href="unPocoDeMi.html">Un poco de mí</a></li>
+            <li><a class="menu--item" href="contacto.html">Contacto</a></li>
         </ul>
         </nav>              
     </Header>
     <main>
-    <h2>contacto</h2>
+    <h2 class="encabezado">Contacto</h2>
     <fieldset>
         <form action="" method="post">
             <p>
@@ -45,14 +48,14 @@
             </select></p>
             <p>Detalla qué querés realizarte. ¿Querés nailart, color liso, brillos?¿Hay algún estilo o diseño en particular que te guste?</p>
             <p><textarea name="comentario" id="comentarios" cols="50" rows="15"></textarea></p>
-            <p><input type="reset" value="Limpiar datos"></p>
-            <p><input type="submit" value="Enviar"></p>
+            <p><input class="boton" type="reset" value="Limpiar datos"></p>
+            <p><input class="boton" type="submit" value="Enviar"></p>
         </form>
 
 
     </fieldset>
-    <footer>
-        <p>Instagram</p>
+    <footer class="pie">
+        <a href="https://www.instagram.com/nancy.carolina.martinez/"><img class="footer__icons" src="../images/instagram.png" alt="Instagram"></a>
         <p>diseñador</p>
     </footer>
 </main>
