@@ -8,36 +8,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body>
-    <Header>
+<body> <!-- logo y menu -->
+    <Header class="headerYFooter">
         <p>Logo</p>
         <nav>
         <ul class="menu">
-            <li class="menu__item"><a class="menu__item__link" href="../index.html">Inicio</a></li>
-            <li class="menu__item"><a class="menu__item__link" href="estilosNail.html">Estilos</a></li>
-            <li class="menu__item"><a class="menu__item__link" href="galeria.html">Galería</a></li>
-            <li class="menu__item"><a class="menu__item__link" href="unPocoDeMi.html">Un poco de mí</a></li>
-            <li class="menu__item"><a class="menu__item__link" href="contacto.html">Contacto</a></li>
+            <li class="menu__item"><a class="menu__item__link" href="../index.html">Inicio</a> |</li>
+            <li class="menu__item"><a class="menu__item__link" href="estilosNail.html">Estilos</a> |</li>
+            <li class="menu__item"><a class="menu__item__link" href="galeria.html">Galería</a> |</li>
+            <li class="menu__item"><a class="menu__item__link" href="unPocoDeMi.html">Un poco de mí</a> |</li>
+            <li class="menu__item"><a class="menu__item__link" href="contacto.html">Contacto</a> </li>
         </ul>
         </nav>
-    </Header>
+    </Header> <!-- fin logo y menu -->
     <main>
-        <div class="encabezado">
+        <div class="encabezado">    <!-- título -->
             <h2 class="encabezado__titulo">Un poco de mí</h2>
         </div>
-        <section><p>Lorem ipsum, dolor sit amet consectetur 
-            adipisicing elit. Necessitatibus cumque, eius culpa illo neque aspernatur delectus maxime praesentium cum commodi nemo provident aliquam at,
-             laudantium unde, voluptate dolor earum id.</p>
-        </section>
-        <section>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel explicabo sed eveniet, rem sapiente nisi tempora recusandae totam esse, illo consectetur nulla vero atque eos quae dolorum ab odio optio!</p>
-        </section>
+            <section>
+                <div seccion__imagen><img class="seccion__imagen--medida400" src="../images/img1.jpg"/></div>
+                <p class="articulo articulo__parrafo--derecha">Lorem ipsum, dolor sit amet consectetur 
+                adipisicing elit. Necessitatibus cumque, eius culpa illo neque aspernatur delectus maxime praesentium cum commodi nemo provident aliquam at,
+                laudantium unde, voluptate dolor earum id.</p>
+            </section>
+            <section>
+                <p class="articulo articulo__parrafo--izquierda">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel explicabo sed eveniet, rem sapiente nisi tempora recusandae totam esse, illo consectetur nulla vero atque eos quae dolorum ab odio optio!</p>
+                <div><img class="seccion__imagen--medida400" src="../images/img2.jpg"/></div>
+            </section>
     </main>
-    <footer class="pie">
+    <footer class="headerYFooter pie">
         <a href="https://www.instagram.com/nancy.carolina.martinez/"><img class="footer__icons" src="../images/instagram25px.png" alt="Instagram"></a>
-        <p>diseñador</p>
+        <p>Nancy Martinez</p>
     </footer>
 </body>
 
