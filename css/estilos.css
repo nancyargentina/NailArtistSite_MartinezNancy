@@ -58,15 +58,16 @@ section {
   justify-content: space-around;
   align-items: center;
 }
+.seccion__imagen--medidas300{
+  width: 300px;
+  }
 .seccion__imagen--medidas350{
   width: 350px;
-
+  height:200px ;
   }
 .seccion__imagen--medida400{
     width: 400px;
     }
-
-
 .articulo{
   display: inline-block;
   width:52rem;
@@ -82,10 +83,16 @@ section {
 .articulo__parrafo--izquierda{
   text-align: left;
 }
+.itemLista{
+  color: beige;
+  font-family: Helvetica, sans-serif;
+  font-weight:300;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
 /* Fin secciones con texto e imagen  */
 
-  /*  estilo para el menu de navegación */
- 
+/*  estilo para el menu de navegación */
 .menu{
     list-style-type:none;
     font-family: 'Bebas Neue', sans-serif;
@@ -114,7 +121,6 @@ a:hover{
     position: relative;
     display: inline-block;
     width: 200px;
-    /*left: 2rem;*/
 }
 .pie{
     font-size: small;
@@ -128,7 +134,19 @@ a:hover{
 .seccionGaleria{
   display: inline-block;
   width: 30%;
-  min-width:300px ;
+  min-width:300px;
+}
+/*   Configuración de la portada con GRID   */
+#grillaPortada{
+     display: grid;
+    grid-template-areas: "cabeza cabeza cabeza"
+                        "img1 nota1 nota1"
+                        "nota2 nota2 img2";
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto auto auto;
+    column-gap: 5px;
+    margin:5px;
+    color: beige;
 }
 #presentacion{
   background-image:url("../images/portada.png");
@@ -139,4 +157,24 @@ a:hover{
   display:flex;
   flex-flow: column nowrap;
   justify-content: center;
+  grid-area: cabeza;
 }
+.nota1_img{
+  grid-area: img1;
+  align-self: center;
+}
+.nota2_img{
+  grid-area: img2;
+  align-self: center;
+}
+.grilla_img{
+  object-fit: cover;
+  width: 100%;
+}
+.nota1_texto{
+  grid-area: nota1; 
+}
+.nota2_texto{
+  grid-area: nota2;
+}
+/*   Fin Configuración de la portada con GRID   */
