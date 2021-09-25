@@ -119,7 +119,9 @@ a:hover{
 .moduloContacto{  
   position: relative;
   display: inline-block;
-  width: 200px;
+ border-color:white;
+ border:1px;
+ /* max-width: 300px; */
 }
 .boton{
   font-family: 'Roboto', sans-serif;
@@ -127,7 +129,6 @@ a:hover{
   border-width: medium;
   background-color:#7157ce;
   color:beige;
-  border-radius: 5px;
 }
 .boton:active{
   background-color:rgb(255, 127, 227) ;
@@ -136,7 +137,7 @@ a:hover{
 .seccionGaleria{
   display: inline-block;
   width: 25%;
-  min-width:300px;
+  width:302px;
 }
 .pie{
   font-size: small;
