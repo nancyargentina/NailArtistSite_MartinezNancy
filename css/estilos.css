@@ -72,6 +72,7 @@ section {
 .seccion__imagen--medida400{
   width: 400px;
 }
+
 .seccion__imagen--bordecolor{
   border: 2.5px solid transparent;
   border-image: linear-gradient(to top right, rgb(255, 127, 227) 0%, #3a4ed5 100%);
@@ -104,12 +105,12 @@ section {
   color: beige;
   margin:16px;
 }
-.menu__item{
+/* .menu__item{
   display: inline-block;
-}
+} */ 
 .menu__item__link{
   text-decoration: none;
-  color:beige;
+  color:beige; 
   font-family: 'Bebas Neue', sans-serif;
 }
 a:hover{
