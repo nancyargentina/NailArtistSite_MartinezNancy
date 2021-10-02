@@ -39,43 +39,43 @@
             <h2 class="encabezado__titulo">Galería</h2>
         </div>           
         <section>
-            <div class="card seccionGaleria bg-dark">
-                <img class="card-img-top seccion__imagen--medidas300" src="../images/foto1.jpg" onclick="onClick(this)" alt="postizas con nailart de CSI">
+            <div class="card seccionGaleria bg-dark" data-bs-toggle="modal" data-bs-target="#mimodal">
+               <img class="card-img-top seccion__imagen--medidas300" src="../images/foto1.jpg"  alt="Nailart de la serie CSI" onclick="onClick(this)">
                 <div class="card-body">
                     <p class="card-text">Nailart de la serie CSI</p>
                 </div>
             </div>
-            <div class="card seccionGaleria bg-dark">
-                <img class="card-img-top seccion__imagen--medidas300" src="../images/foto02.jpg" onclick="onClick(this)" alt="uñas jelly con decals">
+            <div class="card seccionGaleria bg-dark" data-bs-toggle="modal" data-bs-target="#mimodal">
+                <img class="card-img-top seccion__imagen--medidas300" src="../images/foto02.jpg" onclick="onClick(this)" alt="Uñas esculpidas jelly rosa con decals">
                 <div class="card-body">
                     <p class="card-text">Uñas esculpidas jelly rosa con decals</p>
                 </div>
             </div>
-            <div class="card seccionGaleria bg-dark">
-                <img class="card-img-top seccion__imagen--medidas300" src="../images/foto08.jpg" onclick="onClick(this)" alt="uñas verdes gemas con dorado">
+            <div class="card seccionGaleria bg-dark" data-bs-toggle="modal" data-bs-target="#mimodal">
+                <img class="card-img-top seccion__imagen--medidas300" src="../images/foto08.jpg" onclick="onClick(this)" alt="Esculpidas en verde efecto gema con detalles dorados.">
                 <div class="card-body">
                     <p class="card-text text-wrap">Esculpidas en verde efecto gema con detalles dorados.</p>
                 </div>
             </div>
-            <div class="card seccionGaleria bg-dark">
-                <img class="card-img-top seccion__imagen--medidas300 " src="../images/foto09.jpg" onclick="onClick(this)" alt="uñas efecto mármol">
+            <div class="card seccionGaleria bg-dark" data-bs-toggle="modal" data-bs-target="#mimodal">
+                <img class="card-img-top seccion__imagen--medidas300 " src="../images/foto09.jpg" onclick="onClick(this)" alt="Poztizas con efecto mármol">
                 <div class="card-body">
                     <p class="card-text">Poztizas con efecto mármol</p>
                 </div>
             </div>
-            <div class="card seccionGaleria bg-dark">
-                <img class="card-img-top seccion__imagen--medidas300" src="../images/foto10.jpeg" onclick="onClick(this)" alt="encapsulado y estrellas">
+            <div class="card seccionGaleria bg-dark" data-bs-toggle="modal" data-bs-target="#mimodal">
+                <img class="card-img-top seccion__imagen--medidas300" src="../images/foto10.jpeg" onclick="onClick(this)" alt="Capping con destellos encapsulados y nailart de estrellas">
                 <div class="card-body">
                     <p class="card-text">Capping con destellos encapsulados y nailart de estrellas</p>
                 </div>
             </div>
-            <div class="card seccionGaleria bg-dark">
-                <img class="card-img-top seccion__imagen--medidas300" src="../images/popart.jpg"onclick="onClick(this)"  alt="nailart popArt">
+            <div class="card seccionGaleria bg-dark" data-bs-toggle="modal" data-bs-target="#mimodal">
+                <img class="card-img-top seccion__imagen--medidas300" src="../images/popart.jpg"onclick="onClick(this)"  alt="Nailart con diseño PopArt">
                 <div class="card-body">
                     <p class="card-text">Nailart con diseño PopArt</p>
                 </div>
             </div>
-            <div class="card seccionGaleria bg-dark">
+            <div class="card seccionGaleria bg-dark" data-bs-toggle="modal" data-bs-target="#mimodal">
                 <img src="../images/stamping.jpg" class="card-img-top seccion__imagen--medidas300" onclick="onClick(this)" alt="estamping floreado">
                 <div class="card-body">
                   <p class="card-text">Diseño con técnica de Stamping en diseños florales</p>
@@ -83,15 +83,15 @@
               </div>      
         </section>
 
-        <!-- Modal for full size images on click-->
-        <div class="modal modal-lg bg-dark" id="modal01"  onclick="this.style.display='none'">
-            <div class="modal-dialog">
-                <div class="modal-content">
+        <!-- Modal-->
+        <div class="modal fade" id="mimodal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark">
                     <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body bg-dark">
-                        <img id="img01" class="container col-">
+                    <div class="modal-body">
+                        <img id="img01" class="container">
                         <p id="caption"></p>
                     </div>
                 </div>
@@ -107,8 +107,6 @@
         // Modal Image Gallery
         function onClick(element) {
           document.getElementById("img01").src = element.src;
-          document.getElementById("modal01").style.display = "block";
-          /* document.getElementById("modal01").modal('show'); */
           var captionText = document.getElementById("caption");
           captionText.innerHTML = element.alt;
         }

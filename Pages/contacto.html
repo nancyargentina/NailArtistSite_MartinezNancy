@@ -38,8 +38,8 @@
         <div class="encabezado">
             <h2 class="encabezado__titulo">Contacto</h2>
         </div>        
-        <section>
-            <fieldset class="container moduloContacto border border-light">
+        <section class="">
+            <div class="container border border-light rounded-3 moduloContacto">
                 <form action="" method="post" novalidate>
                     <div class="row g-3 align-items-center">
                         <div class="col-auto">
@@ -77,7 +77,7 @@
                         <label for="wsp"class="col-auto form-check-label">Sólo WhatsApp</label>
                         <input class="form-check-input" type="checkbox" name="wsp" id="wsp" value="1">
                     </div>
-                    <div class="row g-3 align-items-center">
+                    <div class="row g-3">
                         <div class="col-auto">
                             <label for="serv" class="col-auto col-form-label">¿Qué querés hacerte?</label>
                         </div>
@@ -93,12 +93,12 @@
                             Selecciona una opción
                         </div>
                     </div>
-                    <div class="row g-3 align-items-center">
-                        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4">
+                    <div class="row g-3">
+                        <div>
                             <p>Detalla qué querés realizarte. ¿Querés nailart, color liso, brillos?¿Hay algún estilo o diseño en particular que te guste?</p>
                         </div>
                     </div> 
-                    <div class="row g-3 align-items-center">
+                    <div class="row g-3">
                         <div class="col-auto">
                             <textarea name="comentario" class="form-control form-control-sm"id="comentarios" cols="48" rows="15" required></textarea>
                         </div>
@@ -110,7 +110,7 @@
                     <p><input class="boton btn btn-sm" type="reset" value="Limpiar datos"></p>
                     <p><input class="boton btn btn-sm" type="submit" value="Enviar"></p>
                 </form>
-            </fieldset>
+            </div>
         </section>
     </main>
     <footer class="headerYFooter pie">
