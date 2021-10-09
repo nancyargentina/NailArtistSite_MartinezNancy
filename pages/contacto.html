@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoe. Uñas con estilo-Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Allison&family=Yellowtail&family=Roboto:wght@200;300;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">   
+</head>
+<body>
+    <Header class=""> 
+          <nav class="navbar navbar-expand-md navbar-dark">  
+            <div class="container-fluid">
+                <div class="navbar-brand">
+                    <a class="menu__item__link" href="../index.html"><img class="logo" src="../images/logo.jpg" alt="Logo"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="menu">Menú</span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end"id="navbarNav">
+                    <ul class="navbar-nav menu text-end">
+                        <li class="nav-item"><a class="menu__item__link" href="../index.html">Inicio</a> |</li>
+                        <li class="nav-item"><a class="menu__item__link" href="estilosNail.html">Estilos</a> |</li>
+                        <li class="nav-item"><a class="menu__item__link" href="galeria.html">Galería</a> |</li>
+                        <li class="nav-item"><a class="menu__item__link" href="unPocoDeMi.html">Un poco de mí</a> |</li>
+                        <li class="nav-item"><a class="menu__item__link" href="contacto.html">Contacto</a> </li>
+                    </ul>
+                </div>
+            </div>   
+        </nav> 
+    </Header>
+
+    <main>
+        <div class="encabezado">
+            <h1 class="encabezado__titulo">Contacto</h1>
+        </div>        
+        <section class="">
+            <div class="container border border-light rounded-3 moduloContacto">
+                <form action="" method="post" novalidate>
+                    <div class="row g-3 mb-3 align-items-center">
+                        <div class="col-auto">
+                            <label for="unNombre" class="col-form-label">Nombre y Apellido</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="text" class="form-control form-control-sm" name="nombre" id="unNombre" placeholder="Nombre y Apellido" required>
+                        </div>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">Completa tu nombre</div>
+                    </div>
+                    <div class="row g-3 mb-3 align-items-center">
+                        <div class="col-auto">
+                            <label for="email" class="col-auto col-form-label">Correo electrónico</label>
+                        </div>                        
+                        <div class="col-8">
+                            <input type="email" class="form-control col-auto form-control-sm" name="correo" id="email" placeholder="nombre@correo.com.ar" aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">
+                            Por favor,escribe un correo o teléfono
+                        </div>
+                    </div>                   
+                    <div class="row g-3 mb-3 align-items-center">
+                        <div class="col-auto">
+                            <label for="tel" class="col-auto col-form-label">Teléfono</label>
+                        </div>
+                        <div class="col-9">
+                            <input type="tel" class=" col-auto form-control form-control-sm" name="tel" id="tel" placeholder="(011)15 98765432" required>
+                        </div>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">Por favor,escribe un correo o teléfono</div>
+                    </div>
+                    <div class="row g-3 mb-3 align-items-center">
+                        <label for="wsp"class="col-auto form-check-label">Sólo WhatsApp</label>
+                        <input class="form-check-input" type="checkbox" name="wsp" id="wsp" value="1">
+                    </div>
+                    <div class="row g-3  mb-3">
+                        <div class="col-auto">
+                            <label for="serv" class="col-auto col-form-label">¿Qué querés hacerte?</label>
+                        </div>
+                        <div class="col-auto">
+                            <select class="form-select form-select-sm" name="servicio" id="serv" required>
+                                <option value="semi">Esmaltado semipermanente</option>
+                                <option value="esculpido">Uñas esculpidas</option>
+                                <option value="presson">Uñas postizas</option>
+                            </select>
+                        </div>                       
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">
+                            Selecciona una opción
+                        </div>
+                    </div>
+                    <div class="row g-3 mb-3 ">
+                        <div>
+                            <p>Detalla qué querés realizarte. ¿Querés nailart, color liso, brillos?¿Hay algún estilo o diseño en particular que te guste?</p>
+                        </div>
+                    </div> 
+                    <div class="row g-3 mb-3 justify-content-center">
+                        <div class="col-auto">
+                            <textarea name="comentario" class="form-control form-control-sm"id="comentarios" cols="48" rows="15" required></textarea>
+                        </div>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">
+                            falta completar
+                        </div>
+                    </div>                      
+                    <p><input class="boton btn btn-sm" type="reset" value="Limpiar datos"></p>
+                    <p><input class="boton btn btn-sm" type="submit" value="Enviar"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="headerYFooter pie">
+        <a href="https://www.instagram.com/nancy.carolina.martinez/"><img class="footer__icons" src="../images/instagram25px.png" alt="Instagram"></a>
+        <p>Nancy Martinez</p>
+        <div>Logotipo hecho con <a href="https://www.designevo.com/es/" title="Creador de logotipos gratis online">
+            DesignEvo</a></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
