@@ -1,0 +1,19 @@
+@import "variables.scss";
+
+ /*  estilo para el menu de navegación */
+ .menu{
+    list-style-type:none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size:16px;
+    color: $colortexto;
+    margin:16px;
+  }
+  .menu__item__link{
+    text-decoration: none;
+    color:$colortexto; 
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  a:hover{
+    color: rgb(255, 127, 227);
+  }
+   /*  fin estilo de menu de navegación  */

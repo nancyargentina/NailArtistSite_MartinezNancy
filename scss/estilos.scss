@@ -1,0 +1,83 @@
+*{ 
+    margin:0;
+    padding:0;
+  }
+@import "variables.scss";
+@import "navbar.scss";
+@import "portada.scss";
+@import "animaciones";
+@import "base.scss";
+
+  /*hasta 480px*/
+  @media only screen and (max-width:480px) {
+    #grillaPortada{
+      grid-template-areas: "cabeza cabeza"
+                          "img1 img1"
+                          "nota1 nota1"
+                          "nota2 nota2"
+                          "img2 img2";
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto auto auto auto auto ;
+    }
+    #presentacion{
+    height: 200px;
+    }
+    .encabezado{
+    background-size:100% 15vh;
+    height: 15vh;
+    }
+    .encabezado__titulo{
+    top:1vh;
+    }
+  }
+  /* hasta 768px */
+  @media only screen and (min-width:481px) and (max-width: 768px){
+    #grillaPortada{
+      grid-template-areas: "cabeza cabeza"
+                          "img1 nota1"
+                          "img1 nota1"
+                          "img2 nota2"
+                          "img2 nota2";
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto auto auto auto auto ;
+    }
+    #presentacion{
+      height: 300px;
+    }
+  
+  }
+  /*  hasta 992px*/
+  @media only screen and (min-width:769px) and (max-width: 992px){
+    #presentacion{
+      height: 300px;
+    }
+    .slogan{
+      @include formatText(('Allison', cursive),10vh,$colorsecundario);
+      text-align: center;
+      text-shadow:2px 2px 4px $colortexto; 
+    }
+    #portadatitulo {
+      @include formatText(('Yellowtail',cursive),10vh,$colortexto);
+      text-align: center;
+      text-shadow:1px 1px 2px $colorsecundario; 
+    }
+  }
+  /*hasta 1024*/
+  @media only screen and (min-width:993px)and (max-width:1023px) {
+    #presentacion{
+      height: 400px;
+    }
+    .slogan{
+      @include formatText(('Allison', cursive),20vh,$colorsecundario);
+      text-align: center;
+      text-shadow:2px 2px 4px $colortexto; 
+    }
+    #portadatitulo {
+      @include formatText(('Yellowtail',cursive),20vh,$colortexto);
+      text-align: center;
+      text-shadow:1px 1px 2px $colorsecundario; 
+  }
+} 
+
+  
+  

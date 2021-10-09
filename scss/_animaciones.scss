@@ -1,0 +1,28 @@
+   /* Animaciones*/
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+      50% {
+      opacity: 1;
+    }
+  }
+  
+  .logo--animacion{
+    opacity: 0;
+    animation-name: aparece;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+  }
+  @keyframes aparece{
+    from {
+        transform: translate3d(0,40px,0)
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+  }
+  

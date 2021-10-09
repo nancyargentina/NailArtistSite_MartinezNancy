@@ -1,0 +1,121 @@
+@import "variables.scss";
+
+@mixin formatText($font,$size,$color){
+  font-family: $font;
+  font-size: $size;
+  color: $color;
+}
+//Principal
+body {
+  background-color: rgb(31, 31, 31);
+}
+main{
+   min-height: 800px;
+}
+.headerYFooter {
+    background-color: $colorbase;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__icons{
+    width: 25px;
+}
+.logo{
+  width: 200px;
+}
+.slogan{
+    @include formatText(('Allison', cursive),9vh,$colorsecundario);
+    text-align: center;
+    text-shadow:2px 2px 4px $colortexto; 
+  }
+p { 
+    @include formatText($fuenteTexto,$fuenteTsize ,$colortexto);
+    margin: 16px 5px 16px 5px;
+    padding:0 2px ;
+    text-align: justify;
+}
+  /*  estilo para la cabecera de sección  */
+.encabezado{ 
+    background-image:url("../images/pincelada.png");
+    background-size:100% 25vh;
+    margin-bottom:1%;
+    height: 25vh;
+    animation-name: zoomIn;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+.encabezado__titulo{
+      position:relative;
+      top:4vh;
+}
+  /*  secciones con texto e imagen  */
+h1 {
+    @include formatText(('Yellowtail',cursive),10vh,$colortexto);
+    text-align: center;
+    text-shadow:1px 1px 2px $colorsecundario; 
+}
+#portadatitulo{
+    size:50vh;
+}
+section {
+    color: $colortexto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.seccion__imagen--medidas300{
+    width: 300px;
+    height: 300px;
+}
+.seccion__imagen--medida400{
+    width: 400px;
+}
+.seccion__imagen--bordecolor{
+    border: 2.5px solid transparent;
+    border-image: linear-gradient(to top right, rgb(255, 127, 227) 0%, #3a4ed5 100%);
+    border-image-slice: 1;
+}
+.articulo{
+     display: inline-block;
+    max-width:50rem;
+    height: 40 rem;
+}
+.articulo__titulo{
+    @include formatText(('Allison', cursive),4rem,$colortexto);
+}
+.itemLista{
+    @include formatText($fuenteTexto,$fuenteTsize,$colortexto);
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+  /* Fin secciones con texto e imagen  */
+  
+.moduloContacto{  
+    position: relative;
+    display: inline-block;
+   border-color:white;
+   border:1px;
+   max-width: 500px;
+}
+.boton{
+    font-family: $fuenteTexto;
+    border-color: $colorsecundario;
+    border-width: medium;
+    background-color:$colorsecundario;
+    color:$colortexto;
+}
+.boton:hover{
+    background-color:rgb(255, 127, 227) ;
+    border-color:rgb(255, 119, 226);
+}
+.seccionGaleria{
+    display: inline-block;
+    width: 25%;
+    width:302px;
+}
+.pie{
+    font-size: small;
+}

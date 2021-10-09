@@ -1,265 +1,263 @@
- *{ 
+@charset "UTF-8";
+* {
   margin: 0;
-}
-body {
-  background-color: rgb(31, 31, 31);
-  margin-right: 0;
-}
-main{
-  min-height: 800px;
-}
-.headerYFooter {
-  background-color: rgb(12, 12, 12);
-  display: flex;
-  justify-content: space-between;
-}
-.footer__icons{
-  width: 25px;
-}
-.logo{
-  width: 200px;
-}
-p {
+  padding: 0; }
+
+/*  estilo para el menu de navegación */
+.menu {
+  list-style-type: none;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 16px;
   color: beige;
+  margin: 16px; }
+
+.menu__item__link {
+  text-decoration: none;
+  color: beige;
+  font-family: 'Bebas Neue', sans-serif; }
+
+a:hover {
+  color: #ff7fe3; }
+
+/*  fin estilo de menu de navegación  */
+/*   Configuración de la portada con GRID   */
+#grillaPortada {
+  display: grid;
+  grid-template-areas: "cabeza cabeza cabeza" "img1 nota1 nota1" "nota2 nota2 img2";
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: auto auto auto;
+  column-gap: 5px;
+  margin: 16px;
+  color: beige; }
+
+#presentacion {
+  background-image: url("../images/portada.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  grid-area: cabeza; }
+
+.nota1_img {
+  grid-area: img1;
+  align-self: center; }
+
+.nota2_img {
+  grid-area: img2;
+  align-self: center; }
+
+.grilla_img {
+  object-fit: cover;
+  width: 100%; }
+
+.nota1_texto {
+  grid-area: nota1;
+  justify-self: end; }
+
+.nota2_texto {
+  grid-area: nota2;
+  justify-content: space-between; }
+
+/*   Fin Configuración de la portada con GRID   */
+/* Animaciones*/
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+
+.logo--animacion {
+  opacity: 0;
+  animation-name: aparece;
+  animation-duration: 2s;
+  animation-fill-mode: both; }
+
+@keyframes aparece {
+  from {
+    transform: translate3d(0, 40px, 0); }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+
+body {
+  background-color: #1f1f1f; }
+
+main {
+  min-height: 800px; }
+
+.headerYFooter {
+  background-color: black;
+  display: flex;
+  justify-content: space-between; }
+
+.footer__icons {
+  width: 25px; }
+
+.logo {
+  width: 200px; }
+
+.slogan {
+  font-family: "Allison", cursive;
+  font-size: 9vh;
+  color: #7157ce;
+  text-align: center;
+  text-shadow: 2px 2px 4px beige; }
+
+p {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
+  color: beige;
   margin: 16px 5px 16px 5px;
-  padding:0 2px ;
-  text-align: justify;
-}
+  padding: 0 2px;
+  text-align: justify; }
+
 /*  estilo para la cabecera de sección  */
-.encabezado{ 
-  background-image:url("../images/pincelada.png");
-  background-size:100% 25vh;
-  margin-bottom:1%;
+.encabezado {
+  background-image: url("../images/pincelada.png");
+  background-size: 100% 25vh;
+  margin-bottom: 1%;
   height: 25vh;
   animation-name: zoomIn;
   animation-duration: 1.5s;
-  animation-iteration-count: 1;
-  }
-  .encabezado__titulo{
-    position:relative;
-    top:4vh;
-  }
+  animation-iteration-count: 1; }
+
+.encabezado__titulo {
+  position: relative;
+  top: 4vh; }
+
 /*  secciones con texto e imagen  */
-h2 {
-  color: beige;
-  font-family: 'Yellowtail', cursive;
+h1 {
+  font-family: "Yellowtail", cursive;
   font-size: 10vh;
+  color: beige;
   text-align: center;
-  text-shadow:1px 1px 2px #7157ce; 
-}
-.slogan{
-  color: #7157ce;
-  font-family:'Allison', cursive;
-  font-size: 9vh;
-  text-align: center;
-  text-shadow:2px 2px 4px beige; 
-}
+  text-shadow: 1px 1px 2px #7157ce; }
+
+#portadatitulo {
+  size: 50vh; }
+
 section {
   color: beige;
   padding: 1rem;
   margin-bottom: 1rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-.seccion__imagen--medidas300{
-  width: 300px;
-  height: 300px;
-  }
-.seccion__imagen--medida400{
-  width: 400px;
-}
+  justify-content: space-between;
+  align-items: center; }
 
-.seccion__imagen--bordecolor{
+.seccion__imagen--medidas300 {
+  width: 300px;
+  height: 300px; }
+
+.seccion__imagen--medida400 {
+  width: 400px; }
+
+.seccion__imagen--bordecolor {
   border: 2.5px solid transparent;
-  border-image: linear-gradient(to top right, rgb(255, 127, 227) 0%, #3a4ed5 100%);
-  border-image-slice: 1;
-}
-.articulo{
-   display: inline-block;
-  max-width:50rem;
-  height: 40 rem;
-}
-.articulo__titulo{
-  font-family: 'Allison', cursive;
+  border-image: linear-gradient(to top right, #ff7fe3 0%, #3a4ed5 100%);
+  border-image-slice: 1; }
+
+.articulo {
+  display: inline-block;
+  max-width: 50rem;
+  height: 40 rem; }
+
+.articulo__titulo {
+  font-family: "Allison", cursive;
   font-size: 4rem;
-}
-.itemLista{
-  color: beige;
+  color: beige; }
+
+.itemLista {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
+  color: beige;
   margin-top: 16px;
-  margin-bottom: 16px;
-}
+  margin-bottom: 16px; }
 
 /* Fin secciones con texto e imagen  */
-
-/*  estilo para el menu de navegación */
-.menu{
-  list-style-type:none;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size:16px;
-  color: beige;
-  margin:16px;
-}
-.menu__item__link{
-  text-decoration: none;
-  color:beige; 
-  font-family: 'Bebas Neue', sans-serif;
-}
-a:hover{
-  color: rgb(255, 127, 227);
-}
- /*  fin estilo de menu de navegación  */
-.moduloContacto{  
+.moduloContacto {
   position: relative;
   display: inline-block;
- border-color:white;
- border:1px;
- max-width: 500px;
-}
-.boton{
-  font-family: 'Roboto', sans-serif;
+  border-color: white;
+  border: 1px;
+  max-width: 500px; }
+
+.boton {
+  font-family: Helvetica, sans-serif;
   border-color: #7157ce;
   border-width: medium;
-  background-color:#7157ce;
-  color:beige;
-}
-.boton:active{
-  background-color:rgb(255, 127, 227) ;
-  border-color:rgb(255, 119, 226);
-}
-.seccionGaleria{
+  background-color: #7157ce;
+  color: beige; }
+
+.boton:hover {
+  background-color: #ff7fe3;
+  border-color: #ff77e2; }
+
+.seccionGaleria {
   display: inline-block;
   width: 25%;
-  width:302px;
-}
-.pie{
-  font-size: small;
-}
-/*   Configuración de la portada con GRID   */
-#grillaPortada{
-  display: grid;
-  grid-template-areas: "cabeza cabeza cabeza"
-                      "img1 nota1 nota1"
-                      "nota2 nota2 img2";
-  grid-template-columns: 25% 50% 25%;
-  grid-template-rows: auto auto auto;
-  column-gap: 5px;
-  margin:16px;
-  color: beige;
-}
-#presentacion{
-  background-image:url("../images/portada.png");
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 600px;
-  display:flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  grid-area: cabeza;
-}
-.nota1_img{
-  grid-area: img1;
-  align-self: center;
-}
-.nota2_img{
-  grid-area: img2;
-  align-self: center;
-}
-.grilla_img{
-  object-fit: cover;
-  width: 100%;
-}
-.nota1_texto{
-  grid-area: nota1; 
-}
-.nota2_texto{
-  grid-area: nota2;
-}
-/*   Fin Configuración de la portada con GRID   */
-/* Animaciones*/
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
+  width: 302px; }
 
-    50% {
-    opacity: 1;
-  }
-}
-
-.logo--animacion{
-  opacity: 0;
-  animation-name: aparece;
-  animation-duration: 2s;
-  animation-fill-mode: both;
-}
-@keyframes aparece{
-  from {
-      transform: translate3d(0,40px,0)
-  }
-  to {
-      transform: translate3d(0,0,0);
-      opacity: 1
-  }
-}
+.pie {
+  font-size: small; }
 
 /*hasta 480px*/
-@media only screen and (max-width:480px) {
-  #grillaPortada{
-    grid-template-areas: "cabeza cabeza"
-                        "img1 img1"
-                        "nota1 nota1"
-                        "nota2 nota2"
-                        "img2 img2";
+@media only screen and (max-width: 480px) {
+  #grillaPortada {
+    grid-template-areas: "cabeza cabeza" "img1 img1" "nota1 nota1" "nota2 nota2" "img2 img2";
     grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto auto auto auto ;
-  }
-  #presentacion{
-  height: 200px;
-  }
-  .encabezado{
-  background-size:100% 15vh;
-  height: 15vh;
-  }
-  .encabezado__titulo{
-  top:1vh;
-  }
-}
+    grid-template-rows: auto auto auto auto auto; }
+  #presentacion {
+    height: 200px; }
+  .encabezado {
+    background-size: 100% 15vh;
+    height: 15vh; }
+  .encabezado__titulo {
+    top: 1vh; } }
+
 /* hasta 768px */
-@media only screen and (min-width:481px) and (max-width: 768px){
-  #grillaPortada{
-    grid-template-areas: "cabeza cabeza"
-                        "img1 nota1"
-                        "img1 nota1"
-                        "img2 nota2"
-                        "img2 nota2";
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  #grillaPortada {
+    grid-template-areas: "cabeza cabeza" "img1 nota1" "img1 nota1" "img2 nota2" "img2 nota2";
     grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto auto auto auto ;
-  }
-  #presentacion{
-    height: 300px;
-  }
+    grid-template-rows: auto auto auto auto auto; }
+  #presentacion {
+    height: 300px; } }
 
-}
 /*  hasta 992px*/
-@media only screen and (min-width:769px) and (max-width: 992px){
-  #presentacion{
-    height: 300px;
-  }
-  
-}
-/*hasta 1024*/
-@media only screen and (min-width:993px)and (max-width:1023px) {
-  #presentacion{
-    height: 400px;
-  }
- 
-}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  #presentacion {
+    height: 300px; }
+  .slogan {
+    font-family: "Allison", cursive;
+    font-size: 10vh;
+    color: #7157ce;
+    text-align: center;
+    text-shadow: 2px 2px 4px beige; }
+  #portadatitulo {
+    font-family: "Yellowtail", cursive;
+    font-size: 10vh;
+    color: beige;
+    text-align: center;
+    text-shadow: 1px 1px 2px #7157ce; } }
 
+/*hasta 1024*/
+@media only screen and (min-width: 993px) and (max-width: 1023px) {
+  #presentacion {
+    height: 400px; }
+  .slogan {
+    font-family: "Allison", cursive;
+    font-size: 20vh;
+    color: #7157ce;
+    text-align: center;
+    text-shadow: 2px 2px 4px beige; }
+  #portadatitulo {
+    font-family: "Yellowtail", cursive;
+    font-size: 20vh;
+    color: beige;
+    text-align: center;
+    text-shadow: 1px 1px 2px #7157ce; } }

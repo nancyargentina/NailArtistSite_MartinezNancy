@@ -1,0 +1,45 @@
+
+/*   Configuración de la portada con GRID   */
+#grillaPortada{
+    display: grid;
+    grid-template-areas: "cabeza cabeza cabeza"
+                        "img1 nota1 nota1"
+                        "nota2 nota2 img2";
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto auto auto;
+    column-gap: 5px;
+    margin:16px;
+    color: $colortexto;
+  }
+  #presentacion{
+    background-image:url("../images/portada.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    grid-area: cabeza;
+  }
+  .nota1_img{
+    grid-area: img1;
+    align-self: center;
+  }
+  .nota2_img{
+    grid-area: img2;
+    align-self: center;
+  }
+  .grilla_img{
+    object-fit: cover;
+    width: 100%;
+  }
+  .nota1_texto{
+    grid-area: nota1;
+    justify-self: end;
+  }
+  .nota2_texto{
+    grid-area: nota2;
+    justify-content: space-between
+  }
+  /*   Fin Configuración de la portada con GRID   */
