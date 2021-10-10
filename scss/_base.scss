@@ -12,12 +12,16 @@ body {
 main{
    min-height: 800px;
 }
-.headerYFooter {
+header{
+    background-color: $colorbase;
+}
+footer{
     background-color: $colorbase;
     display: flex;
     justify-content: space-between;
 }
-.footer__icons{
+
+footer__icons{
     width: 25px;
 }
 .logo{
