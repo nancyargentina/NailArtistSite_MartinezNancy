@@ -33,12 +33,12 @@
   /* hasta 768px */
   @media only screen and (min-width:481px) and (max-width: 768px){
     #grillaPortada{
-      grid-template-areas: "cabeza cabeza"
-                          "img1 nota1"
-                          "img1 nota1"
-                          "img2 nota2"
-                          "img2 nota2";
-      grid-template-columns: 50% 50%;
+      grid-template-areas: "cabeza cabeza cabeza"
+                          ". img1 ."
+                          "nota1 nota1 nota1"
+                          "nota2 nota2 nota2"
+                          ". img2 .";
+      grid-template-columns: 20% 60% 20%;
       grid-template-rows: auto auto auto auto auto ;
     }
     #presentacion{
@@ -63,12 +63,19 @@
     }
   }
   /*hasta 1024*/
-  @media only screen and (min-width:993px)and (max-width:1023px) {
+  @media only screen and (min-width:993px)and (max-width:1024px) {
+    #grillaPortada{
+      grid-template-areas: "cabeza cabeza cabeza"
+                          "img1 nota1 nota1"
+                          "nota2 nota2 img2";
+      grid-template-columns: 40% 20% 40%;
+      grid-template-rows: auto auto auto;
+    }
     #presentacion{
       height: 400px;
     }
     .slogan{
-      @include formatText(('Allison', cursive),20vh,$colorsecundario);
+      @include formatText(('Allison', cursive),15vh,$colorsecundario);
       text-align: center;
       text-shadow:2px 2px 4px $colortexto; 
     }
@@ -78,6 +85,19 @@
       text-shadow:1px 1px 2px $colorsecundario; 
   }
 } 
+/*más de 1024*/
+@media only screen and (min-width:1025px){
+  .slogan{
+    @include formatText(('Allison', cursive),20vh,$colorsecundario);
+    text-align: center;
+    text-shadow:2px 2px 4px $colortexto; 
+  }
+  #portadatitulo {
+    @include formatText(('Yellowtail',cursive),30vh,$colortexto);
+    text-align: center;
+    text-shadow:1px 1px 2px $colorsecundario; 
+  }
+}
 
   
   

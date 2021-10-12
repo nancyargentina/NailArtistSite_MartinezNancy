@@ -5,10 +5,10 @@
     grid-template-areas: "cabeza cabeza cabeza"
                         "img1 nota1 nota1"
                         "nota2 nota2 img2";
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 40% 20% 40%;
     grid-template-rows: auto auto auto;
-    column-gap: 5px;
-    margin:16px;
+    row-gap:10px;
+    width:100%;
     color: $colortexto;
   }
   #presentacion{
@@ -16,7 +16,8 @@
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 600px;
+    margin:0px;
+    height: 500px;
     display:flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -33,13 +34,16 @@
   .grilla_img{
     object-fit: cover;
     width: 100%;
+    border-radius: 0.6em;
   }
   .nota1_texto{
     grid-area: nota1;
     justify-self: end;
+    margin: 10px;
   }
   .nota2_texto{
     grid-area: nota2;
-    justify-content: space-between
+    justify-content: space-between;
+    margin: 10px;
   }
   /*   Fin Configuración de la portada con GRID   */

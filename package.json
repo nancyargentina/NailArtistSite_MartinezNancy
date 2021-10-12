@@ -1,7 +1,7 @@
 {
-  "name": "desafioaplicandosass",
+  "name": "repodesarrolloweb",
   "version": "1.0.0",
-  "description": "",
+  "description": "curso de desarrolloweb",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
@@ -10,9 +10,17 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Nancy C Martinez",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nancyargentina/NailArtistSite_MartinezNancy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nancyargentina/NailArtistSite_MartinezNancy/issues"
+  },
+  "homepage": "https://github.com/nancyargentina/NailArtistSite_MartinezNancy#readme"
 }
