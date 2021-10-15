@@ -7,6 +7,7 @@
 @import "portada.scss";
 @import "animaciones";
 @import "base.scss";
+@import "contacto.scss";
 
   /*hasta 480px*/
   @media only screen and (max-width:480px) {
@@ -44,7 +45,11 @@
     #presentacion{
       height: 300px;
     }
-  
+    #grillaContacto{
+      grid-template-areas: "izquierda derecha";
+      grid-template-columns: 60% 40%;
+      grid-template-rows: auto;
+    }
   }
   /*  hasta 992px*/
   @media only screen and (min-width:769px) and (max-width: 992px){
@@ -60,6 +65,11 @@
       @include formatText(('Yellowtail',cursive),10vh,$colortexto);
       text-align: center;
       text-shadow:1px 1px 2px $colorsecundario; 
+    }
+    #grillaContacto{
+      grid-template-areas: "izquierda derecha";
+      grid-template-columns: 60% 40%;
+      grid-template-rows: auto;
     }
   }
   /*hasta 1024*/
@@ -84,6 +94,11 @@
       text-align: center;
       text-shadow:1px 1px 2px $colorsecundario; 
   }
+  #grillaContacto{
+    grid-template-areas: "izquierda derecha";
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+  }
 } 
 /*más de 1024*/
 @media only screen and (min-width:1025px){
@@ -96,6 +111,11 @@
     @include formatText(('Yellowtail',cursive),30vh,$colortexto);
     text-align: center;
     text-shadow:1px 1px 2px $colorsecundario; 
+  }
+  #grillaContacto{
+    grid-template-areas: "izquierda derecha";
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
   }
 }
 

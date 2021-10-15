@@ -96,27 +96,6 @@ section {
 }
   /* Fin secciones con texto e imagen  */
   
-.moduloContacto{  
-    position: relative;
-    display: inline-block;
-   border-color:white;
-   border:1px;
-   background-color:$colorbase;
-   max-width: 500px;
-   box-shadow:0 .125rem .25rem rgba(223, 220, 220, 0.521)
-}
-.boton{
-    font-family: $fuenteTexto;
-    border-color: $colorsecundario;
-    border-width: medium;
-    background-color:$colorsecundario;
-    color:$colortexto;
-    border-radius: 10px;
-}
-.boton:hover{
-    background-color:rgb(255, 127, 227) ;
-    border-color:rgb(255, 119, 226);
-}
 .seccionGaleria{
     display: inline-block;
     width: 25%;
