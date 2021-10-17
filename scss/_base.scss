@@ -76,10 +76,11 @@ section {
 .seccion__imagen--medida400{
     width: 400px;
 }
-.seccion__imagen--bordecolor{
-    border: 2.5px solid transparent;
-    border-image: linear-gradient(to top right, rgb(255, 127, 227) 0%, #3a4ed5 100%);
-    border-image-slice: 1;
+.arriba{
+    background: linear-gradient(to top right, rgb(252, 80, 146) 0%, #3a4ed5 100%);
+    background: -webkit-linear-gradient(to top right, rgb(252, 80, 146) 0%, #3a4ed5 100%);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;     
 }
 .articulo{
      display: inline-block;
