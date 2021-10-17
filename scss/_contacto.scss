@@ -32,8 +32,9 @@
     justify-items: center;
     align-items: start;
 }
-.contenedorForm{grid-area: izquierda;}
+.contenedorForm{
+    grid-area: izquierda;
+}
 .contenedorInstagram{
       grid-area: derecha;
-      //align-self: center;
 }

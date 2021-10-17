@@ -21,7 +21,7 @@ footer{
     justify-content: space-between;
 }
 
-footer__icons{
+.footer__icons{
     width: 25px;
 }
 .logo{
@@ -39,7 +39,7 @@ p {
 }
   /*  estilo para la cabecera de sección  */
 .encabezado{ 
-    background-image:url("../images/pincelada.png");
+    background-image:url("../images/ondatitulo.png");
     background-size:100% 25vh;
     margin-bottom:1%;
     height: 25vh;
@@ -101,13 +101,19 @@ section {
     width: 25%;
     width:302px;
     height: 100%;
+    margin:10px 0px;
     align-self: stretch;
+    background-color:black;box-shadow:0 .125rem .25rem rgba(223, 220, 220, 0.521)
 }
-/* .seccionGaleria:hover{
-    data-bs-toggle:"popover";
-    data-bs-trigger:"hover focus";
-    data-bs-content:"ampliar"
-} */
+.card-img-top:hover {
+    opacity:0.5;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+  }
+  
 .pie{
     font-size: small;
 }
