@@ -92,7 +92,7 @@ section {
 }
 
 .articulo{
-     display: inline-block;
+    display: inline-block;
     max-width:50rem;
     height: 40 rem;
 }
@@ -123,10 +123,7 @@ section {
     -ms-transition: opacity 500ms;
     transition: opacity 500ms;
   }
- 
-#fondoespecial{
-    background-color: $colorbase;
-}
+
 .pie{
     font-size: small;
 }

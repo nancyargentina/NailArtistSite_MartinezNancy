@@ -1,0 +1,22 @@
+.contenedorError{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ancho{
+    width: 500px;
+}
+.textosError{
+    max-width: 1000px;
+}
+#fondoespecial{
+    background-color: $colorbase;
+}
+.bordecolor{
+    @include formatText(('Yellowtail',cursive),10vh,$colortexto);
+    text-align: center;
+    background: linear-gradient(45deg, red, blue) ;
+    background: -webkit-linear-gradient(45deg, red, blue);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+} 
